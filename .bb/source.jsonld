@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@type": "DataDownload",
+  "name": "HIV.csv",
+  "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/HIV.csv",
+  "dateAccessed": "2024-05-22",
+  "dcterms:source": "MoleculeNet / DeepChem",
+  "description": "HIV dataset from MoleculeNet benchmark, hosted on DeepChem S3.",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+}

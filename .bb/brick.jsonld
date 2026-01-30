@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "@type": "dcat:Dataset",
+  "name": "hiv-inhibitors-moleculenet-data",
+  "description": "The HIV dataset was introduced by the Drug Therapeutics Program (DTP) AIDS Antiviral Screen, which tested the ability to inhibit HIV replication for over 40,000 compounds. Screening results were evaluated and placed into three categories: Confirmed Inactive (CI), Confirmed Active (CA) and Confirmed Moderately Active (CM). We further combine the latter two labels, making it a classification task between inactive (CI) and active (CA and CM).",
+  "keywords": ["HIV", "drug discovery", "moleculenet", "bioactivity", "classification"],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "dateCreated": "2024-05-22",
+  "version": "1.0.0",
+  "creator": {
+    "@type": "Organization",
+    "name": "BioBricks.ai"
+  },
+  "distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "name": "hiv.parquet",
+      "contentUrl": "brick/hiv.parquet",
+      "encodingFormat": "application/x-parquet"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HIV_active",
+      "description": "Binary classification label for HIV inhibition activity (0: inactive, 1: active)"
+    }
+  ]
+}

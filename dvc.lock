@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python stages/01_download.py
+    deps:
+    - path: stages/01_download.py
+      hash: md5
+      md5: 8f9d2a71dfa18490f1f69e7e9c5204b1
+      size: 651
+    outs:
+    - path: download/HIV.csv
+      hash: md5
+      md5: 9ad10c88f82f1dac7eb5c52b668c30a7
+      size: 2193844
+  build:
+    cmd: python stages/02_build.py
+    deps:
+    - path: download/HIV.csv
+      hash: md5
+      md5: 9ad10c88f82f1dac7eb5c52b668c30a7
+      size: 2193844
+    - path: stages/02_build.py
+      hash: md5
+      md5: 123ce0c80500ddcc07f22092148ed820
+      size: 684
+    outs:
+    - path: brick/hiv.parquet
+      hash: md5
+      md5: a9ea59b7509fb5001576ac2487386773
+      size: 867310

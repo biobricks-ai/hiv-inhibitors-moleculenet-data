@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "columns": [
+    {
+      "name": "smiles",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "Canonical SMILES string representing the compound structure",
+      "dataType": "string"
+    },
+    {
+      "name": "activity",
+      "description": "Experimental result category (CI: Confirmed Inactive, CM: Confirmed Moderately Active, CA: Confirmed Active)",
+      "dataType": "string"
+    },
+    {
+      "name": "hiv_active",
+      "@type": "obo:OBI_0001185",
+      "description": "Binary indicator of HIV inhibition activity (0: Inactive, 1: Active/Moderately Active)",
+      "dataType": "integer"
+    }
+  ]
+}
